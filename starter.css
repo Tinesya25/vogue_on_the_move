@@ -13,7 +13,11 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
+h1 {
+  font-family: charm;
+  font-size: 50px;
+  color: burlywood;
+}
 h2 {
   line-height: 1.25;
 }
@@ -85,4 +89,27 @@ dialog {
   overflow: hidden;
   white-space: nowrap;
   clip-path: inset(100%);
+}
+p {
+  font-family: inter;
+}
+h2,
+h3 {
+  font-family: Playpen Sans Deva;
+  color: beige;
+}
+
+.klik-tekst {
+  font-family: Playpen Sans Deva;
+  font-weight: 800px;
+}
+
+.form {
+  font-family: inter;
+  color: black;
+}
+.formoverskrift {
+  color: #420404;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
