@@ -4,17 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventnavn</title>
+  <title>Vogue on the move</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kotta+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <section class="hero">
+  </section>
+
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="./"></a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo">
+        </a>
+      </div>
       <nav class="site-nav">
-        <button>Menu</button>
+        <button popovertarget="menu">Menu</button>
+
         <ul class="menu" id="menu" popover>
           <li><a href="./" aria-current="page">Forside</a></li>
           <li><a href="./svg.html">Interaktiv SVG</a></li>
@@ -22,14 +46,80 @@
         </ul>
       </nav>
     </div>
+
   </header>
 
-  <main></main>
+  <main>
+    <div class="forside">
+      <img src="imgs/forside.webp" alt="forside">
+      <h1>VOGUE ON THE MOVE</h1>
+    </div>
+    <div class="billeder">
 
+      <div class="billede-popover">
+        <div class="billede">
+          <img src="imgs/karneval.webp" alt="Karneval">
+          <button class="knap" popovertarget="karneval-info">
+            Historien om karneval...
+          </button>
+        </div>
+
+        <div id="karneval-info" class="popover-indhold" popover>
+          <h3>Karneval</h3>
+          <p>Karneval har rødder flere hundrede år tilbage og er en festlig tradition, hvor mennesker samles om musik,
+            dans,
+            farverige kostumer og kreativ udfoldelse. Traditionen har udviklet sig gennem tiden og fejres i dag over
+            hele
+            verden som en hyldest til fællesskab, kultur og frihed til at udtrykke sig.</p>
+        </div>
+      </div>
+
+      <div class="billede-popover">
+        <div class="billede">
+          <img src="imgs/modeshow.webp" alt="Modeshow">
+          <button class="knap" popovertarget="modeshow-info">
+            Om de forskellige styles...
+          </button>
+        </div>
+
+        <div id="modeshow-info" class="popover-indhold" popover>
+          <h3>Modeshow</h3>
+          <p>Til Vogue on the Move kan du opleve alt fra elegant haute couture og moderne streetwear til farverige
+            avantgarde-looks og ekstravagante karnevalskostumer. Modeshowet hylder kreativitet, personlig stil og modet
+            til at
+            skille sig ud.</p>
+        </div>
+      </div>
+
+      <div class="billede-popover">
+        <div class="billede">
+          <img src="imgs/kobenhavn.webp" alt="København">
+          <button class="knap" popovertarget="kobenhavn-info">
+            København som by...
+          </button>
+        </div>
+
+        <div id="kobenhavn-info" class="popover-indhold" popover>
+          <h3>København</h3>
+          <p>København danner den perfekte ramme om Vogue on the Move. Byen er kendt for sin unikke blanding af
+            skandinavisk
+            minimalisme, kreativitet og moderne streetstyle. Med sine farverige gader og levende kulturliv bliver
+            København en
+            naturlig scene for mode, kunst og fællesskab.</p>
+        </div>
+      </div>
+
+
+      </section>
+  </main>
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>VOGUE ON THE MOVE
+
+        Mode, kreativitet og fællesskab i hjertet af København.
+
+        © 2026 Vogue on the Move · Alle rettigheder forbeholdes.</p>
+
     </div>
   </footer>
   <script src="./script.js"></script>

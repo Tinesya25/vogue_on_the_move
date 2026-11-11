@@ -25,35 +25,44 @@
   </header>
 
   <main>
-    <section class="svg-page">
-      <header class="svg-intro">
-        <h1>Interaktiv SVG</h1>
-        <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
-      </header>
+    <section class="svg-layout">
+      <div class="svg-placeholder">
+        <svg class="svg-girls" viewBox="0 0 1920 1080" xmlns="http://w3.org">
+          <!-- Indlæser hele jeres svg.svg-fil som baggrundskort -->
+          <image href="./svg.svg" width="1920" height="1080" />
 
-      <section class="svg-layout">
-        <div class="svg-placeholder"></div>
+          <!-- Jeres "girls"-figur der rykker sig ovenpå kortet -->
+          <g class="girls">
+            <circle cx="960" cy="540" r="45" fill="#eddfce" stroke="#730000" stroke-width="8" />
+          </g>
+        </svg>
+      </div>
 
-        <article class="panel">
-          <h2>Udforsk eventet</h2>
-          <div class="accordion">
-            <!-- TODO: Lav om til details/summary -->
-            <div class="accordion-item">
-              <h3>Punkt 1</h3>
-              <p>Beskriv første område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 2</h3>
-              <p>Beskriv andet område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 3</h3>
-              <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
-            </div>
+
+      <div class="accordion">
+        <details class="accordion-item" name="accordion" data-position="karneval" open>
+          <summary>Karneval</summary>
+          <div>
+            <p>Her starter turen ved karnevallet.</p>
           </div>
-        </article>
-      </section>
+        </details>
+
+        <details class="accordion-item" name="accordion" data-position="modeshow">
+          <summary>Modeshow</summary>
+          <div>
+            <p>Tryk her for at se pigerne rykke til modeshowet.</p>
+          </div>
+        </details>
+
+        <details class="accordion-item" name="accordion" data-position="kobenhavn">
+          <summary>København</summary>
+          <div>
+            <p>Tryk her for at se pigerne rykke til København.</p>
+          </div>
+        </details>
+      </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
